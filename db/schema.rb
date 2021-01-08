@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2021_01_08_100453) do
 
-  create_table "posts", force: :cascade do |t|
+  create_table "posts", charset: "utf8mb4", force: :cascade do |t|
     t.string "name"
     t.string "title"
     t.text "content"
