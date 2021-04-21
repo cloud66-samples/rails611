@@ -1,3 +1,6 @@
 rails:
   configuration:
     node_version: 12
+    network:
+      traffic_sources:
+        groups: ["load_balancer"]
