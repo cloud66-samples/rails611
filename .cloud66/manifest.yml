@@ -5,3 +5,4 @@ rails:
       options:
         without: ["banana", "apple"]
         full-index: true        
+        quiet: false
