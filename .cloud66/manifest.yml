@@ -1,3 +1,6 @@
 rails:
   configuration:
     node_version: 12
+    bundler:
+      options:
+        without: ["banana"]
