@@ -3,4 +3,5 @@ rails:
     node_version: 12
     bundler:
       options:
-        without: ["banana"]
+        without: ["banana", "apple"]
+        full-index: true        
