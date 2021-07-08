@@ -13,3 +13,8 @@ after_symlink:
     target: rails
     run_on: all_servers
     apply_during: all
+  - command: df -h
+    target: rails
+    run_on: all_servers
+    apply_during: all
+    sudo: true
