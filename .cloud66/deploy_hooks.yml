@@ -1,0 +1,11 @@
+after_bundle:
+  - command: ls -la /
+    target: rails
+    run_on: all_servers
+    apply_during: all
+    sudo: true
+  - command: ls -la /
+    target: rails
+    run_on: all_servers
+    apply_during: all
+
