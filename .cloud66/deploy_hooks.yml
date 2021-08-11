@@ -1,0 +1,23 @@
+first_thing: 
+  - command: bash -c "ls -la /tmp && echo first_thing"
+    target: any
+    execute: true
+after_checkout: 
+  - command: bash -c "ls -la /tmp && echo after_checkout"
+    target: any
+    execute: true
+after_bundle: 
+  - command: bash -c "ls -la /tmp && echo after_bundle"
+    target: any
+    execute: true
+after_symlink: 
+  - command: bash -c "ls -la /tmp && echo after_symlink 1"
+    target: any
+    execute: true
+  - command: bash -c "ls -la /tmp && echo after_symlink 2"
+    target: any
+    execute: true    
+last_thing: 
+  - command: bash -c "ls -la /tmp && echo last_thing"
+    target: any
+    execute: true
