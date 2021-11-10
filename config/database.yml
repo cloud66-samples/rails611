@@ -1,6 +1,5 @@
 default: &default
   primary:
-    database: rails611
     username: root
     password:
     adapter: mysql2
@@ -8,7 +7,6 @@ default: &default
     pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
     host: 127.0.0.1
   primary_replica:
-    database: rails611
     username: root
     password:
     adapter: mysql2
