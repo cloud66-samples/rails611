@@ -1,17 +1,17 @@
 default: &default
   primary:
-    database: <%= ENV["MYSQL_DATABASE"] %>
-    username: <%= ENV["MYSQL_USERNAME"] %>
-    password: <%= ENV["MYSQL_PASSWORD"] %>
-    host: <%= ENV["MYSQL_ADDRESS"] %>
+    database: <%= ENV["MYSQL_PRIMARY_DATABASE"] %>
+    username: <%= ENV["MYSQL_PRIMARY_USERNAME"] %>
+    password: <%= ENV["MYSQL_PRIMARY_PASSWORD"] %>
+    host: <%= ENV["MYSQL_PRIMARY_ADDRESS"] %>
     adapter: mysql2
     encoding: utf8mb4
     pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   primary_replica:
-    database: <%= ENV["MYSQL_DATABASE"] %>
-    username: <%= ENV["MYSQL_USERNAME"] %>
-    password: <%= ENV["MYSQL_PASSWORD"] %>
-    host: <%= ENV["MYSQL_ADDRESS"] %>
+    database: <%= ENV["MYSQL_PRIMARY_REPLICA_DATABASE"] %>
+    username: <%= ENV["MYSQL_PRIMARY_REPLICA_USERNAME"] %>
+    password: <%= ENV["MYSQL_PRIMARY_REPLICA_PASSWORD"] %>
+    host: <%= ENV["MYSQL_PRIMARY_REPLICA_ADDRESS"] %>
     adapter: mysql2
     encoding: utf8mb4
     pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
